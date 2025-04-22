@@ -111,7 +111,9 @@
     border-radius: 15px;
 }
 .catalog-box__img img{
+    height: 100%;
     border-radius: 15px;
+    object-fit: cover;
 }
 .catalog__btn,
 .news__btn{
@@ -196,6 +198,12 @@
     margin: 0 auto;
     border-radius: 50px;
     background-color: #fff;
+}
+.about-top__subtitle{
+   color: rgba(0, 0, 0, 0.5);
+}
+.about-top__subtitle::before{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .about-top {
     margin-bottom: 4rem;
@@ -439,16 +447,9 @@
 .questions__link:hover.questions__link::after{
     background: url('../images/home/arrow-news-right.svg') no-repeat;
 }
-.questions__bottom-text{
-    font-size: 19rem;
-    font-weight: 700;
-    font-family: 'Akony';
-    font-style: italic;
-    text-transform: uppercase;
-    color: #3c3c3c;
-    opacity: 0.3;
-}
-.container-questions{
-    max-width: 1480px;
+
+.container-questions img{
     margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }

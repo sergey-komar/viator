@@ -107,15 +107,9 @@
     background: linear-gradient(90deg, #0c9396 0%, #054960 100%);  
 }
 .header__text{
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Akony';
-    font-size: 200px;
-    line-height: 1.2;
-    font-style: italic;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.2);
+    max-width: 1400px;
+    margin: 43rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+   
 }

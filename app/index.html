@@ -38,14 +38,19 @@
                 <a href="#">меню</a>
               </li>
             </ul>
+           
           </nav>
+          
         </div>
 
        
         <a class="header-top__phone" href="tel:+79270078760">+7 (927) 00 78 760</a>
     
-        <button class="header-top__btn">Оставить заявку</button>
-         
+        <button class="header-top__btn btn-click">Оставить заявку</button>
+
+        <div class="nav-icon">
+          <div class="nav-icon__middle"></div>
+        </div>
       </div>
 
       <div class="header-box">
@@ -56,11 +61,13 @@
         <a href="#" class="header-box__catalog">Каталог</a>
       </div>
 
-      <div class="header__text">viator</div>
+      <div class="header__text">
+        <img src="./images/home/viator.png" alt="img">
+      </div>
     </div>
   </header>
  
-    <main class="main">
+     <main class="main">
       <section class="catalog">
         <div class="container">
           <div class="catalog-top">
@@ -136,7 +143,7 @@
           <a href="#" class="catalog__btn">Все лодки</a>
         </div>
       </section>
-
+ 
       <section class="news">
         <div class="container">
           <div class="news-top">
@@ -314,11 +321,13 @@
           
         </div>
         <div class="container-questions">
-          <div class="questions__bottom-text">viator</div>
+          <img  src="./images/home/footer-bg.png" alt="img">
+          
         </div>
        
       </div>
     </main>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
@@ -350,7 +359,7 @@
          
             <div class="footer-block__info">
               <a href="tel:+79270078760" class="footer-block__info-phone">+7 (927) 00 78 760</a>
-              <button class="footer-block__info-btn">Оставить заявку</button>
+              <button class="footer-block__info-btn btn-click">Оставить заявку</button>
             </div>
 
             <a href="#" class="footer-block__site">WELCOME@VIATOR-BOATS.RU</a>
@@ -376,8 +385,34 @@
 
       </div>
     </footer>
-  
+   
 
+    <div class="modal">
+      <div class="modal__inner">
+          <div class="modal__inner-block">
+            <div class="modal__inner-title">Задайте вопрос</div>
+            <div class="modal__inner-text">Наша команда свяжется с вами и ответит на все вопросы</div>
+              <form  class="modal-form">
+                  <input type="text" class="modal-form__input" placeholder="Ваше имя">
+                  <input type="tel" class="modal-form__input" placeholder="Email">
+                  <textarea class="modal-form__textarea" placeholder="Ваш вопрос"></textarea>
+                  <div class="modal-form__text">
+                    <label class="modal-form__label">
+                      <input class="modal-form__checkbox" type="checkbox">
+                      <span class="modal-form__custom"></span>
+                      <p>Я согласен (а) с <a href="#">политикой конфиденциальности</a></p>
+                    </label>
+                   
+                   
+                  </div>
+                  <button class="modal-form__btn">Ваш вопрос</button>
+                 
+                 
+              </form>
+          </div>
+      </div>
+      <div data-close class="modal__close">&times;</div>
+    </div>
 
     <script src="https://unpkg.com/imask"></script>
     <script src="js/main.min.js"></script>

@@ -1,0 +1,207 @@
+.nav-icon{
+    width: 100px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+    border-radius: 15px;
+    z-index: 8;
+    background: #09717d;
+    background: linear-gradient(90deg, #054960 0%, #0c9396 100%);
+}
+.nav-icon__middle{
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+.nav-icon__middle::before,
+.nav-icon__middle::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+.nav-icon__middle::before{
+    top: 8px;
+    transition: all .2s ease-in;
+}
+.nav-icon__middle::after{
+    bottom: 8px;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle{
+    background-color: transparent;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .2s ease-in;
+   
+}
+.nav-icon.nav-icon--active .nav-icon__middle::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+    transition: all .2s ease-in; 
+}
+
+@media(max-width: 1400px){
+    .header__text {
+        margin-top: 30rem;
+    }
+}
+
+
+
+@media(max-width: 1024px){
+    .header{
+        min-height: 65rem;
+        height: 65rem;
+    }
+    .header-box{
+        margin-left: 0;
+    }
+    .header__text{
+        margin-top: 16rem;
+    }
+    .header-top__menu{
+        width: 400px;
+    }
+    .header-top__phone, .header-top__btn{
+        width: 175px;
+    }
+    .header-top__menu{
+        padding: 0 20px;
+    }
+    .menu__list{
+        gap: 10px;
+    }
+}
+
+
+
+
+@media(max-width: 768px){
+    .nav-icon{
+        position: relative;
+        display: flex;
+        z-index: 8;
+        
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        // height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #fff;
+        right: 0;
+        top: 0;
+        color: #F7F7FF;
+        z-index: 2;
+        border-radius: 0px;
+        transform: translateX(200%);
+        transition: all .5s ease-in;
+    }
+    
+    .menu__list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu li a{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+    }
+    .menu li{
+        margin-bottom: 20px;
+    }
+    .menu.nav--active{
+        transform: translateX(0%);
+        transition: all .5s ease-in;
+        margin-left: 0;
+    }
+    .header-top__menu{
+        width: 120px;
+    }
+}
+
+
+@media(max-width: 650px){
+    .nav-icon{
+        width: 80px;
+    }
+    .header-top__phone::before{
+        display: none;
+    }
+}
+
+@media(max-width: 550px){
+    .header-top__phone,
+    .header-top__btn{
+        display: none;
+    }
+    .header-top{
+        background: #09717d;
+        background: linear-gradient(90deg, #054960 0%, #0c9396 100%);
+        border-radius: 15px;
+    }
+    .nav-icon,
+    .header-top__menu{
+        background: transparent;
+        height: 50px;
+    }
+    .header-box__title{
+        font-size: 18.5px;
+    }
+    .header-box__catalog{
+        width: 228px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .header{
+        background-position-y: -70px;
+    }
+    .header::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -80px;
+        background: rgba(0, 0, 0, .2);
+    }
+    .header-box{
+        position: relative;
+        padding-top: 25rem;
+    }
+    .header__text{
+        margin-top: 20px;
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-icon.nav-icon--active .nav-icon__middle::before,
+    .nav-icon.nav-icon--active .nav-icon__middle::after{
+        background-color: #000;
+    }
+    .header{
+        min-height: 58rem;
+        height: 58rem;
+        background: url('../images/home/heading-mobile.png') no-repeat;
+        background-color: #1c1c1c;
+        background-size: cover;
+    }
+}
